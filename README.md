@@ -14,7 +14,7 @@
     <img src="https://gitee.com/xmo/MineAdmin/badge/star.svg?theme=dark" />
     <img src="https://gitee.com/xmo/MineAdmin/badge/fork.svg?theme=dark" />
     <img src="https://svg.hamm.cn/badge.svg?key=License&value=Apache-2.0&color=da4a00" />
-    <img src="https://svg.hamm.cn/badge.svg?key=MineAdmin&value=v1.4.x" />
+    <img src="https://svg.hamm.cn/badge.svg?key=MineAdmin&value=v2.0.0" />
 </p>
 PHP有很多优秀的后台管理系统，但基于Swoole的后台管理系统没找到合适我自己的。
 所以就开发了一套后台管理系统。系统可以用于网站管理后台、CMS、CRM、OA、ERP等。
@@ -140,17 +140,5 @@ php bin/hyperf.php mine:install
 ## 通过 OSCS 安全认证
 [![OSCS Status](https://www.oscs1024.com/platform/badge/kanyxmo/MineAdmin.svg?size=large)](https://www.murphysec.com/dr/9ztZvuSN6OLFjCDGVo)
 
-## 演示图片
-<img src="https://s1.ax1x.com/2022/07/31/vklKzR.jpg" />
-<img src="https://s1.ax1x.com/2022/07/31/vkl8eK.jpg" />
-<img src="https://s1.ax1x.com/2022/07/31/vkl1L6.jpg" />
-<img src="https://s1.ax1x.com/2022/07/31/vklNJH.jpg" />
-<img src="https://s1.ax1x.com/2022/07/31/vklJoD.jpg" />
-<img src="https://s1.ax1x.com/2022/07/31/vkllsx.jpg" />
-<img src="https://s1.ax1x.com/2022/07/31/vklZoF.jpg" />
-<img src="https://s1.ax1x.com/2022/07/31/vklUWd.jpg" />
-<img src="https://s1.ax1x.com/2022/07/31/vkl0yt.jpg" />
-<img src="https://s1.ax1x.com/2022/07/31/vkltFe.jpg" />
-<img src="https://s1.ax1x.com/2022/07/31/vkluW9.jpg" />
-<img src="https://s1.ax1x.com/2022/07/31/vklnJJ.jpg" />
-<img src="https://s1.ax1x.com/2022/07/31/vklmi4.jpg" />
+## 状态
+![Alt](https://repobeats.axiom.co/api/embed/83978ccc011a804a8b58acedfcaf894127d5bc85.svg "Repobeats analytics image")
