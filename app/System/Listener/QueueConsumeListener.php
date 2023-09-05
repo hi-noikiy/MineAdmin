@@ -79,10 +79,12 @@ class QueueConsumeListener implements ListenerInterface
      */
     public function beforeConsume(object $event)
     {
-        $this->service->update(
-            (int)$event->data['queue_id'],
-            ['consume_status' => self::CONSUME_STATUS_DOING]
-        );
+        if (! empty($event->data['queue_id'])) {
+            $this->service->update(
+                (int)$event->data['queue_id'],
+                ['consume_status' => self::CONSUME_STATUS_DOING]
+            );
+        }
     }
 
     /**
@@ -102,10 +104,12 @@ class QueueConsumeListener implements ListenerInterface
      */
     public function afterConsume(object $event)
     {
-        $this->service->update(
-            (int)$event->data['queue_id'],
-            ['consume_status' => self::CONSUME_STATUS_SUCCESS]
-        );
+        if (! empty($event->data['queue_id'])) {
+            $this->service->update(
+                (int)$event->data['queue_id'],
+                ['consume_status' => self::CONSUME_STATUS_SUCCESS]
+            );
+        }
     }
 
     /**
@@ -115,10 +119,12 @@ class QueueConsumeListener implements ListenerInterface
      */
     public function failToConsume(object $event)
     {
-        $this->service->update(
-            (int)$event->data['queue_id'], [
-            'consume_status' => self::CONSUME_STATUS_REPEAT,
-            'log_content' => $event->throwable ?: $event->throwable->getMessage()
-        ]);
+        if (! empty($event->data['queue_id'])) {
+            $this->service->update(
+                (int)$event->data['queue_id'], [
+                'consume_status' => self::CONSUME_STATUS_REPEAT,
+                'log_content' => $event->throwable ?: $event->throwable->getMessage()
+            ]);
+        }
     }
 }
