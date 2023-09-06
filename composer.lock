@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c18a1ee72e24231e779ce1f7c0645fcf",
+    "content-hash": "973b932aa20c0929e10df79a7dd13c70",
     "packages": [
         {
             "name": "aliyuncs/oss-sdk-php",
@@ -8236,6 +8236,45 @@
             "time": "2023-09-04T06:15:32+00:00"
         },
         {
+            "name": "xmo/mine-gateway",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "/opt/gateway",
+                "reference": "f9116f65c5c754ac3f818e759f33cad0ed4c4f13"
+            },
+            "require": {
+                "php": ">=8.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Mine\\Gateway\\": "src/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "MineTest\\": "tests"
+                }
+            },
+            "scripts": {
+                "cs-fix": [
+                    "php-cs-fixer fix $1"
+                ]
+            },
+            "license": [
+                "Apache-2.0"
+            ],
+            "description": "mineadmin app store gateway",
+            "keywords": [
+                "gateway",
+                "mineadmin"
+            ],
+            "transport-options": {
+                "relative": false
+            }
+        },
+        {
             "name": "xmo/mine-office",
             "version": "v1.3.1",
             "dist": {
@@ -10637,7 +10676,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "xmo/mine-gateway": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],

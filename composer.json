@@ -12,6 +12,7 @@
   "require": {
     "xmo/jwt-auth": "0.6.*",
     "xmo/mine-core": "^1.5",
+    "xmo/mine-gateway": "dev-main",
     "xmo/mine-office": "1.*",
     "xmo/mine-translatable": "1.*"
   },
@@ -68,5 +69,11 @@
       "Composer\\Config::disableProcessTimeout",
       "php ./bin/hyperf.php start"
     ]
+  },
+  "repositories": {
+    "xmo/mine-gateway": {
+      "type": "path",
+      "url": "/opt/gateway"
+    }
   }
 }
